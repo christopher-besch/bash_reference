@@ -28,11 +28,11 @@ find and replace (without g only first match per line)
 
 rotate pages
 
-'pdftk mathe.pdf rotate 1-endleft output mathe_new.pdf'
+`pdftk mathe.pdf rotate 1-endleft output mathe_new.pdf`
 
 ocr pages
 
-'ocrmypdf mathe_new.pdf mathe_new_new.pdf'
+`ocrmypdf mathe_new.pdf mathe_new_new.pdf`
 
 run command in background
 
