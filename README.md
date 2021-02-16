@@ -41,3 +41,7 @@ run command in background
 list number of lines in all .cpp files in all subdirectories
 
 `find . -name '*.cpp' | xargs wc -l`
+
+compress pdf
+
+`gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=physik_31_new.pdf physik_31.pdf`
