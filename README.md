@@ -1,4 +1,4 @@
-# bash_scripting
+# Bash Reference
 
 A Set Of Bash Scripts
 
