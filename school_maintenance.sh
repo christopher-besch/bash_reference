@@ -16,7 +16,8 @@ transcripts_sym_folder="${DIR}/sym/pro"
 # new tasks dump
 new_tasks_folder="${DIR}/sym/nsk"
 # what is a task folder?
-task_pattern=".*/\\d\\d_\\d\\d_\\d\\d"
+task_pattern=".+/\\d\\d_\\d\\d_\\d\\d"
+topic_pattern="(?<=/\\d\\d_\\d\\d_\\d\\d_).*"
 
 declare -A aliases
 aliases[english]=eng
@@ -36,6 +37,14 @@ function get_task_name() {
         task_name="_$task_name"
     fi
     echo $task_name
+}
+
+function get_topic() {
+    topic=$(echo $1 | grep -P -o $topic_pattern)
+    if [[ -n $topic ]]; then
+        topic="_$topic"
+    fi
+    echo $topic
 }
 
 function resolve_alias() {
@@ -71,8 +80,9 @@ function create_latest_sym() {
 
     # find most recent task
     task_path=$(find "$subject_folder" -mindepth 1 -maxdepth 1 -type d | grep -P $task_pattern | sort | tail -1)
+    topic="$(get_topic $task_path)"
     # create sym link
-    ln -s $task_path "$sym_tasks_folder/$subject"
+    ln -s $task_path "$sym_tasks_folder/$subject$topic"
 }
 
 function create_sym() {
