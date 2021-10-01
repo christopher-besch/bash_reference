@@ -45,3 +45,11 @@ list number of lines in all .cpp files in all subdirectories
 compress pdf
 
 `gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=physik_31_new.pdf physik_31.pdf`
+
+# [Tricks](https://youtu.be/V8EUdia_kOE)
+
+- `sudo !!` re-run with sudo
+- `less +F` open file in end
+- `ctrl-x-e` open command in EDITOR
+- `alt-x` past previous command's argument
+- `reset` reset terminal
