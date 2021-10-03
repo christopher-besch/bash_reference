@@ -46,6 +46,12 @@ compress pdf
 
 `gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=physik_31_new.pdf physik_31.pdf`
 
+set default chmod
+
+`find . -type d -exec chmod 755 {} \;`
+
+`find . -type f -exec chmod 644 {} \;`
+
 # [Tricks](https://youtu.be/V8EUdia_kOE)
 
 - `sudo !!` re-run with sudo
