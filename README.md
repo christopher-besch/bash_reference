@@ -52,6 +52,32 @@ set default chmod
 
 `find . -type f -exec chmod 644 {} \;`
 
+`cat /etc/os-release`
+
+List processes using mount
+
+`lsof +f -- /path/to/mount`
+
+Kill processes using mount
+
+`fuser -kivm -TERM /path/to/mount`
+
+Better `du`
+
+`ncdu`
+
+Show ip address
+
+`ip -brief address`
+
+Boot into BIOS
+
+`systemctl reboot --firmware-setup`
+
+tldr man pages for `ls`
+
+`tldr ls`
+
 # [Tricks](https://youtu.be/V8EUdia_kOE)
 
 - `sudo !!` re-run with sudo
