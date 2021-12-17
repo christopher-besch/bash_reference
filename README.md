@@ -78,6 +78,10 @@ tldr man pages for `ls`
 
 `tldr ls`
 
+What to do when the terminal is fucked:
+
+`export TERM=xterm`
+
 # [Tricks](https://youtu.be/V8EUdia_kOE)
 
 - `sudo !!` re-run with sudo
