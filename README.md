@@ -1,5 +1,7 @@
 # Bash Reference
 
+This repo is generally very unclean and not maintained.
+
 A Set Of Bash Scripts
 
 ## Bash Configuration Files
