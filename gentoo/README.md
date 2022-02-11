@@ -45,7 +45,7 @@ enter chroot
 ```
 chroot /mnt/gentoo /bin/bash
 source /etc/profile
-export PS1="(chroot) ${PS1}"
+export PS1="(chroot) $PS1"
 export TERM=xterm
 set -o vi
 ```
