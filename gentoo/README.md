@@ -60,7 +60,8 @@ UUID=fbd09928-d172-43a9-92e0-2892df275152 /     ext4 noatime          0 1
 /etc/fstab
 ```
 
-
-/dev/sda1: UUID="15F7-55FC" BLOCK_SIZE="512" TYPE="vfat" PARTUUID="79ada79b-58c7-c64a-91b3-6b73e8a4b9ef"
-/dev/sda2: UUID="eeec9b3b-5adc-425f-a73c-2377bacfc8cb" TYPE="swap" PARTUUID="7e663262-9c41-d64b-a126-d864cd3ffc07"
-/dev/sda3: UUID="fbd09928-d172-43a9-92e0-2892df275152" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="b91880e0-028c-a34b-ba6d-29f4e8982e9c"
+## Attempts
+- systemd
+- genkernel
+- NetworkManager
+- xfce
